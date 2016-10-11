@@ -1,0 +1,1 @@
+CREATE SCHEMA IF NOT EXISTS "ECommerce" AUTHORIZATION ecommerce_app_user

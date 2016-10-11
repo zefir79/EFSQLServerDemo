@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Account Summary";
+}
+
+@Scripts.Render("~/bundles/app")
+
+
+
+<div ng-app="home">
+
+    <div ng-controller="indexCtrl">
+        <hr />
+        <strong>User Account Flat object: </strong> <br />
+        <div>{{userAccount}}</div>
+        <hr />
+        <div ng-bind="userAccount.userName"></div>
+      
+    </div>
+</div>
