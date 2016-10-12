@@ -131,7 +131,7 @@
                                 <div class="balance-due">
                                     <h2>Balance Due:</h2>
                                     <hr>
-                                    <span class="amount pull-right">$0.00</span>
+                                    <span class="amount pull-right">{{userAccount.balanceDue | currency}}</span>
                                     <br />
                                     <br />
                                     <br />
@@ -174,7 +174,7 @@
                                     <h2>Return Status:</h2>
                                     <hr>
                                     <span class="your-status">
-                                        Received for 2016
+                                        {{userAccount.returnsStatus}}
                                     </span>
                                     <br />
                                     <a class="pull-right align-bottom" href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> More Info</a>
@@ -190,9 +190,9 @@
                                             <img class="refund-approved" src="~/scripts/app/assets/Refund-Apporved-01.png" align="center" alt="Refund Approved" />
                                         </div>
                                         <div class="col-sm-8">
-                                            <span class="refund-status-txt">Refund Approved</span>
+                                            <span class="refund-status-txt">{{userAccount.refundStatus}}</span>
                                             <p>
-                                                Your 2016 Refund has been approved.
+                                                Your {{userAccount.year}} Refund has been approved.
                                                 We will send you your refund
                                                 in a few days.
                                             </p>
@@ -206,43 +206,43 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="transcript-snapshot">
-                                    <h2><span>2016 </span>Transcript Snapshot:</h2>
+                                    <h2><span>{{userAccount.year}} </span>Transcript Snapshot:</h2>
                                     <hr>
                                     <table class="transcript-table">
                                         <tbody>
                                             <tr>
                                                 <td class="transcript-datatype">Filling Status:</td>
-                                                <td>Married filing Joint</td>
+                                                <td>{{userAccount.filingStatus}}</td>
                                             </tr>
                                             <tr>
                                                 <td class="transcript-datatype">Adjusted Gross Income:</td>
-                                                <td>$123,456.00</td>
+                                                <td>{{userAccount.agi | currency}}</td>
                                             </tr>
                                             <tr>
                                                 <td class="transcript-datatype">Deductions:</td>
-                                                <td>$1,234.00</td>
+                                                <td>{{userAccount.deductions | currency}}</td>
                                             </tr>
                                             <tr>
                                                 <td class="transcript-datatype">Taxes Due:</td>
-                                                <td>$0.00</td>
+                                                <td>{{userAccount.taxesDue | currency}}</td>
                                             </tr>
                                             <tr>
                                                 <td class="transcript-datatype">Payments Made:</td>
-                                                <td>$0.00</td>
+                                                <td>{{userAccount.paymentsMade | currency}}</td>
                                             </tr>
                                             <tr>
                                                 <td class="transcript-datatype">Balance Due:</td>
-                                                <td>$0.00</td>
+                                                <td>{{userAccount.balanceDue | currency}}</td>
                                             </tr>
                                             <tr>
                                                 <td class="transcript-datatype">Refund Due:</td>
-                                                <td>$1,234</td>
+                                                <td>{{userAccount.refundDue | currency}}</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                     <br />
                                     <p>
-                                        This is a snapshot of your 2016 Transcript. To view your full transcript,
+                                        This is a snapshot of your {{userAccount.year}} Transcript. To view your full transcript,
                                         please click on the button under "Get Transcript".
                                     </p>
                                 </div>

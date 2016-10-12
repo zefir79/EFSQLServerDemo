@@ -433,12 +433,12 @@ INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "
   /* Individual filing as SINGLE and has been RECEIVED by IRS*/
   INSERT INTO "ECommerce"."Account" ("AccountId", "UserId", "Year", "FilingStatus", "ReturnsStatus", "ReturnsStatusDate",
   	"RefundStatus", "RefundStatusDate", "TotalExceptions", "AGI", "Deductions", "TaxesDue", "PaymentsMade", "BalanceDue", "RefundDue")
-  	VALUES (3, 2, '2015', 'Single', 'Return Received for 2015', current_timestamp, null, null, 3, 50000.00, 500.00, 100.00, 0.00, 100.00, 0.00);
+  	VALUES (3, 2, '2015', 'Single', 'Return Received for 2015', current_timestamp, 'Return Received', null, 3, 50000.00, 500.00, 100.00, 0.00, 100.00, 0.00);
 
   /* Individual filing as HEAD OF HOUSEHOLD and has been RECEIVED by IRS*/
   INSERT INTO "ECommerce"."Account" ("AccountId", "UserId", "Year", "FilingStatus", "ReturnsStatus", 			"ReturnsStatusDate",
   	"RefundStatus", "RefundStatusDate", "TotalExceptions", "AGI", "Deductions", "TaxesDue", "PaymentsMade", "BalanceDue", "RefundDue")
-  	VALUES (4, 3, '2015', 'Head of Household', 'Return Received for 2015', current_timestamp, null, null, 0, 90000.00, 10000.00, 0.00, 0.00, 0.00, 200.00);
+  	VALUES (4, 3, '2015', 'Head of Household', 'Return Received for 2015', current_timestamp, 'Return Received', null, 0, 90000.00, 10000.00, 0.00, 0.00, 0.00, 200.00);
 
   /* Individual filing as HEAD OF HOUSEHOLD and return status for 2015 is EXTENSION has been approved by IRS*/
   INSERT INTO "ECommerce"."Account" ("AccountId", "UserId", "Year", "FilingStatus", "ReturnsStatus", "ReturnsStatusDate",
