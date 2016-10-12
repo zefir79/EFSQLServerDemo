@@ -1,0 +1,62 @@
+.blue-bar{
+  display: block;
+  background-color: $medium-blue;
+  height: 26px;
+  z-index: 1;
+}
+
+.topbar{
+  color: #ffffff;
+  font-size: 14px;
+  padding: 0 32px;
+
+  .usa-icon{
+    padding-top: -2px;
+    width: 20px;
+  }
+
+  span{
+    display: inline-block;
+    margin-top: 3px;
+    margin-left: 3px;
+  }
+
+
+}
+
+.logo-area{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.main-logo{
+  width: 150px;
+}
+
+.input-group{
+  max-width: 250px;
+  padding-top: 5px;
+
+  .form-control{
+    border-color: $dark-blue;
+  }
+
+  .btn{
+    background-color: $medium-blue;
+    border-color: $medium-blue;
+    color: $white;
+    font-size: 20px;
+  }
+
+  .btn:hover{
+    background-color: $lighter-blue;
+  }
+}
+
+//height of the search box
+.btn-height{
+  height: 40px;
+}
+
+

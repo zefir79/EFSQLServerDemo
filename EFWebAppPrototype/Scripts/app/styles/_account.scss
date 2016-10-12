@@ -1,0 +1,63 @@
+
+
+.my-account{
+  display: block;
+  background-color: $lighter-blue;
+  padding: 10px 20px;
+  color: $white;
+  margin-bottom: 15px;
+
+  h1{
+    margin-top: 8px;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+
+
+    .users-name{
+      font-weight: bold;
+
+    }
+
+
+  .page-description{
+    display: block;
+    padding-top: 6px;
+  }
+}
+
+@media (max-width: $viewport-xs) {
+  .my-account {
+    padding: 10px;
+
+    h1 {
+      font-size: 32px;
+    }
+  }
+
+}
+
+.login-info{
+  display: block;
+  background-color: $white;
+  border: $lighter-blue 10px solid;
+  padding: 10px 20px;
+  color: $black;
+  margin-bottom: 15px;
+
+  .users-name{
+    font-weight: bold;
+    color: $primary-orange;
+  }
+
+}
+
+.account-info{
+  display: block;
+  text-align: right;
+  padding-bottom: 5px;
+
+}
+
+

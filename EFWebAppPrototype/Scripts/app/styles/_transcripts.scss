@@ -1,0 +1,46 @@
+.transcript-snapshot{
+  display: block;
+  background-color: $deep-blue;
+  padding: 10px;
+  color: $white;
+
+
+  h2{
+
+    margin-top: 5px;
+    font-size: 24px;
+  }
+
+  .transcript-table{
+    width: 100%;
+
+
+    td{
+      padding: 5px 0;
+      border: solid thin $light-grey;
+      text-align: center;
+    }
+
+    .transcript-datatype{
+      background-color: $white;
+      color: $primary-orange;
+      font-weight: bold;
+
+    }
+  }
+}
+
+.get-transcript{
+  display: block;
+  background-color: $medium-blue;
+  padding: 10px;
+  color: $white;
+
+
+  h2{
+
+    margin-top: 5px;
+    font-size: 24px;
+  }
+
+}

@@ -1,0 +1,44 @@
+.refund-status{
+  display: block;
+  background-color: $lighter-blue;
+  padding: 10px;
+  color: $white;
+
+
+  h2{
+
+    margin-top: 5px;
+    font-size: 24px;
+  }
+
+  .your-status{
+    font-size: 18px;
+  }
+
+  .refund-approved{
+    width:100%;
+
+  }
+
+  .refund-content{
+    text-align: center;
+  }
+
+  .refund-status-txt{
+    display: inline-block;
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: $viewport-xs) {
+
+
+}
+
+@media (min-width: $viewport-lg) {
+  .refund-status{
+    height: 200px;
+  }
+
+}

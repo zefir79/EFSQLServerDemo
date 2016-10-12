@@ -4,7 +4,7 @@
     //angular.module('home', ['common.core', 'common.ui'])
     //    .config(config);
 
-    angular.module('home', ['ngRoute', 'ngResource']).config(function () {
+    angular.module('home', ['ngRoute', 'ui.bootstrap']).config(function () {
         
     });
 

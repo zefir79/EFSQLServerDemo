@@ -1,0 +1,25 @@
+@import "colors";
+@import "viewports";
+@import "fonts";
+@import "columns";
+@import "buttons";
+@import "header";
+@import "navbar";
+@import "main";
+@import "account";
+@import "return-status";
+@import "balance-due";
+@import "refund-status";
+@import "transcripts";
+@import "footer";
+
+
+
+html,body
+{
+ width: 100%;
+ height: 100%;
+ margin: 0px;
+ padding: 0px;
+ overflow-x: hidden;
+}

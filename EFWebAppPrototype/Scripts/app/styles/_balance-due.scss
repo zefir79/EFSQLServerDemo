@@ -1,0 +1,36 @@
+.balance-due{
+  display: block;
+  background-color: $dark-blue;
+  padding: 10px;
+  color: $white;
+
+  h2{
+
+    margin-top: 5px;
+    font-size: 24px;
+  }
+
+  .amount{
+    font-size: 44px;
+  }
+
+}
+
+.make-payment{
+  display: block;
+  background-color: $medium-blue;
+  padding: 10px;
+  color: $white;
+}
+
+.see-payments{
+  display: block;
+  background-color: $lighter-blue;
+  padding: 10px;
+  color: $white;
+}
+
+.payment-icons{
+  text-align: center;
+  font-size: 70px;
+}
