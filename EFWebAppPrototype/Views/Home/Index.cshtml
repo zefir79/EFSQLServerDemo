@@ -196,9 +196,7 @@
                                         <div class="col-sm-8">
                                             <span class="refund-status-txt">{{userAccount.refundStatus}}</span>
                                             <p>
-                                                Your {{userAccount.year}} Refund has been approved.
-                                                We will send you your refund
-                                                in a few day
+                                                {{userAccount.refundStatusDescription}}
                                             </p>
                                         </div>
                                     </div>
@@ -216,7 +214,7 @@
                                         <tbody>
                                             <tr>
                                                 <td class="transcript-datatype">Total Exceptions:</td>
-                                                <td>{{userAccount.totalExceptions | currency}}</td>
+                                                <td>{{userAccount.totalExceptions}}</td>
                                             </tr>
                                             <tr>
                                                 <td class="transcript-datatype">Filling Status:</td>

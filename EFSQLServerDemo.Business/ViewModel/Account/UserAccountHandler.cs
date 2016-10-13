@@ -3,6 +3,7 @@ using EFSQLServerDemo.Business.Common.Query;
 using EFSQLServerDemo.Domain.Repository;
 using DomainAccount = EFSQLServerDemo.Domain.Object.Account; // There is a namespace Account so use Alias to get the domain object
 using System.Collections.Generic;
+using System;
 
 namespace EFSQLServerDemo.Business.ViewModel.Account
 {
@@ -37,20 +38,25 @@ namespace EFSQLServerDemo.Business.ViewModel.Account
 
             string refundStatusImage = string.Empty;
             string refundStatusImageAlt = string.Empty;
+            string refundStatusDescription = string.Empty; 
             if (previousYearAccount.RefundStatus.Contains("Refund Approved"))
             {
                 refundStatusImage = "scripts/app/assets/Refund-Apporved-01.png";
                 refundStatusImageAlt = "Refund Approved";
+                refundStatusDescription = String.Format( "Your {0} Refund has been approved. We will send you your refund in a few day", previousYearAccount.Year);
             }
             else if (previousYearAccount.RefundStatus.Contains("Return Received"))
             {
                 refundStatusImage = "scripts/app/assets/Return-Recieved-01.png";
                 refundStatusImageAlt = "Return Received";
+                refundStatusDescription = String.Format("Your {0} Refund has been received.", previousYearAccount.Year);
             }
             else
             {
                 refundStatusImage = "scripts/app/assets/Refund-Sent-01.png";
                 refundStatusImageAlt = "Return Sent";
+                refundStatusDescription = String.Format("Your {0} Refund has been sent. You will receive your refund in a few day", previousYearAccount.Year);
+
             }
 
             if (user != null)
@@ -78,7 +84,8 @@ namespace EFSQLServerDemo.Business.ViewModel.Account
                     BalanceDue = previousYearAccount.BalanceDue,
                     RefundDue = previousYearAccount.RefundDue,
                     RefundStatusImage = refundStatusImage,
-                    RefundStatusImageAlt = refundStatusImageAlt
+                    RefundStatusImageAlt = refundStatusImageAlt,
+                    RefundStatusDescription = refundStatusDescription
                 };
 
             }
