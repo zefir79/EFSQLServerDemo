@@ -17,7 +17,7 @@
     <AssemblyName>EFWebAppPrototype</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -852,6 +852,9 @@
     <Content Include="Scripts\app\bower_components\jquery\README.md" />
     <Content Include="Scripts\app\bower_components\jquery\src\.eslintrc.json" />
     <Content Include="Scripts\app\styles\application.css" />
+    <Content Include="Scripts\app\styles\application.min.css">
+      <DependentUpon>application.css</DependentUpon>
+    </Content>
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -875,6 +878,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\app\bower_components\angular-route\.bower.json" />
     <Content Include="Scripts\app\bower_components\angular-route\angular-route.min.js.map" />
@@ -972,6 +979,7 @@
     <Content Include="Scripts\app\bower_components\bootstrap-css-only\package.json" />
     <Content Include="Scripts\app\bower_components\bootstrap-css-only\README.md" />
     <None Include="Properties\PublishProfiles\Publish.pubxml" />
+    <Content Include="Scripts\app\styles\_headings.scss" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EFSQLServerDemo.Business\EFSQLServerDemo.Business.csproj">
