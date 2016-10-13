@@ -8,7 +8,7 @@
   h2{
 
     margin-top: 5px;
-    font-size: 24px;
+    font-size: $h2FontSize;
   }
 
   .transcript-table{
@@ -19,6 +19,8 @@
       padding: 5px 0;
       border: solid thin $light-grey;
       text-align: center;
+      color: $white;
+      font-size: 14px;
     }
 
     .transcript-datatype{
@@ -40,7 +42,14 @@
   h2{
 
     margin-top: 5px;
-    font-size: 24px;
+    font-size: $h2FontSize;
   }
+
+}
+
+@media (max-width: $viewport-lg) {
+    .transcript-snapshot{
+        margin-bottom: 15px;
+    }
 
 }
