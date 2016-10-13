@@ -59,4 +59,28 @@
   height: 40px;
 }
 
+@media (max-width: $viewport-md) {
+  .blue-bar{
+    height: 10px;
+  }
+
+  .topbar{
+    display: none;
+
+    img{
+      display: none;
+    }
+  }
+
+  .logo-area{
+    text-align: center;
+
+    img{
+      margin-bottom: 10px;
+    }
+  }
+
+}
+
+
 
