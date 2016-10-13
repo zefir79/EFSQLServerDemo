@@ -2,7 +2,7 @@ DO
 $do$
 DECLARE
   _db TEXT := '"EFDemo"';
-  _user TEXT := 'ecommerce_super_user';
+  _user TEXT := 'efdemo_super_user';
   _password TEXT := 'Year2016!';
 BEGIN
   CREATE EXTENSION IF NOT EXISTS dblink; -- enable extension 
