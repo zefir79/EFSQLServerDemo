@@ -29,5 +29,7 @@ namespace EFSQLServerDemo.Business.ViewModel.Account
         public decimal? PaymentsMade { get; set; }
         public decimal? BalanceDue { get; set; }
         public decimal? RefundDue { get; set; }
+        public string RefundStatusImage { get; set; }
+        public string RefundStatusImageAlt { get; set; }
     }
 }

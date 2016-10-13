@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Account Summary";
+    ViewBag.Title = "IRS Account Dashboard";
     Layout = null;
 }
 
@@ -7,6 +7,8 @@
 @Scripts.Render("~/bundles/angular")
 
 @Scripts.Render("~/bundles/app")
+
+@{var relativePath = Url.Content("~");}
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -18,10 +20,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>IRS Account Dashboard</title>
+   
+    <title>@ViewBag.Title</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> 
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Roboto" rel="stylesheet">
 </head>
 <body ng-controller="indexCtrl">
@@ -186,15 +189,16 @@
                                     <h2>Refund Status:</h2>
                                     <hr>
                                     <div class="row">
-                                        <div class="col-sm-4 no-right-margin">
-                                            <img class="refund-approved" src="~/scripts/app/assets/Refund-Apporved-01.png" align="center" alt="Refund Approved" />
+                                        <div class="col-sm-4 no-right-margin" ng-init="">
+                                            
+                                            <img src="@relativePath{{userAccount.refundStatusImage}}" align="center" alt="{{userAccount.refundStatusImageAlt}}" class="refund-approved">
                                         </div>
                                         <div class="col-sm-8">
                                             <span class="refund-status-txt">{{userAccount.refundStatus}}</span>
                                             <p>
                                                 Your {{userAccount.year}} Refund has been approved.
                                                 We will send you your refund
-                                                in a few days.
+                                                in a few day
                                             </p>
                                         </div>
                                     </div>
@@ -210,6 +214,10 @@
                                     <hr>
                                     <table class="transcript-table">
                                         <tbody>
+                                            <tr>
+                                                <td class="transcript-datatype">Total Exceptions:</td>
+                                                <td>{{userAccount.totalExceptions | currency}}</td>
+                                            </tr>
                                             <tr>
                                                 <td class="transcript-datatype">Filling Status:</td>
                                                 <td>{{userAccount.filingStatus}}</td>

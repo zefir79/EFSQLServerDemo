@@ -17,7 +17,7 @@ namespace EFSQLServerDemo.Business.ViewModel.Account
 
         public UserAccountViewModel Get(UserAccountQuery query)
         {
-            
+
             UserAccountViewModel userAccountViewModel = null;
             IEnumerable<DomainAccount> accounts = _db.Account.Where(o => o.UserId == query.UserId).ToList();
             DomainAccount previousYearAccount = null;
@@ -32,10 +32,28 @@ namespace EFSQLServerDemo.Business.ViewModel.Account
             {
                 previousYearAccount = latestAccount;
             }
-   
+
             var user = _db.User.Where(o => o.UserId == query.UserId).ToList().FirstOrDefault();
 
-            if (user!=null)
+            string refundStatusImage = string.Empty;
+            string refundStatusImageAlt = string.Empty;
+            if (previousYearAccount.RefundStatus.Contains("Refund Approved"))
+            {
+                refundStatusImage = "scripts/app/assets/Refund-Apporved-01.png";
+                refundStatusImageAlt = "Refund Approved";
+            }
+            else if (previousYearAccount.RefundStatus.Contains("Return Received"))
+            {
+                refundStatusImage = "scripts/app/assets/Return-Recieved-01.png";
+                refundStatusImageAlt = "Return Received";
+            }
+            else
+            {
+                refundStatusImage = "scripts/app/assets/Refund-Sent-01.png";
+                refundStatusImageAlt = "Return Sent";
+            }
+
+            if (user != null)
             {
                 userAccountViewModel = new UserAccountViewModel
                 {
@@ -58,11 +76,13 @@ namespace EFSQLServerDemo.Business.ViewModel.Account
                     TaxesDue = previousYearAccount.TaxesDue,
                     PaymentsMade = previousYearAccount.PaymentsMade,
                     BalanceDue = previousYearAccount.BalanceDue,
-                    RefundDue = previousYearAccount.RefundDue
+                    RefundDue = previousYearAccount.RefundDue,
+                    RefundStatusImage = refundStatusImage,
+                    RefundStatusImageAlt = refundStatusImageAlt
                 };
 
             }
-      
+
             return userAccountViewModel;
         }
     }

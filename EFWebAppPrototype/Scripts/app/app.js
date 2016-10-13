@@ -5,7 +5,6 @@
     //    .config(config);
 
     angular.module('home', ['ngRoute', 'ui.bootstrap']).config(function () {
-        
     });
 
 

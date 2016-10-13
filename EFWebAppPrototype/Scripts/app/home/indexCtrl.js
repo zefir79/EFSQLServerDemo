@@ -12,7 +12,7 @@
         //$scope.accounts = [];
         $scope.userAccount = null;
         $scope.loadData = loadData;
-
+       
         function loadData() {
             apiService.get('/EFWebAppPrototype/api/data/useraccount', null,
                         userAccountLoadCompleted,

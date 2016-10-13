@@ -24,15 +24,19 @@ namespace EFWebAppPrototype
             //// ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             //bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
             //            "~/Scripts/modernizr-*"));
+            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
+                       "~/Scripts/app/bower_components/modernizr/src/Modernizr.js"));
+
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~//Scripts/app/bower_components/angular-bootstrap/ui-bootstrap.js"));
+                      "~/Scripts/app/bower_components/angular-bootstrap/ui-bootstrap.js"
+                      ));
 
+            //"~/Scripts/app/bower_components/respond/dest/respond.min.js"
             bundles.Add(new StyleBundle("~/style/css").Include(
                      "~/Scripts/app/bower_components/bootstrap-css-only/css/bootstrap.css",
                       "~/Scripts/app/app.css",
-                      "~/Scripts/app/styles/application.css",
-                      "~/Scripts/app/bower_components/font-awesome/css/font-awesome.css"));
+                      "~/Scripts/app/styles/application.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                 "~/Scripts/app/app.js",
