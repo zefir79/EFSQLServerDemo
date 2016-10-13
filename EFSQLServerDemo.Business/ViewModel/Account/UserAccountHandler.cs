@@ -43,20 +43,20 @@ namespace EFSQLServerDemo.Business.ViewModel.Account
             {
                 refundStatusImage = "scripts/app/assets/Refund-Apporved-01.png";
                 refundStatusImageAlt = "Refund Approved";
-                refundStatusDescription = String.Format( "Your {0} Refund has been approved. We will send you your refund in a few day", previousYearAccount.Year);
+                refundStatusDescription = String.Format("Your {0} refund has been approved. We will send you your refund in a few days.", previousYearAccount.Year);
             }
             else if (previousYearAccount.RefundStatus.Contains("Return Received"))
             {
                 refundStatusImage = "scripts/app/assets/Return-Recieved-01.png";
                 refundStatusImageAlt = "Return Received";
-                refundStatusDescription = String.Format("Your {0} Refund has been received.", previousYearAccount.Year);
+                var endingStatus = previousYearAccount.RefundDue > 0 ? "and we are currently processing it." : "- no Refund Due.";
+                refundStatusDescription = String.Format("Your {0} return has been received {1}", previousYearAccount.Year, endingStatus);
             }
             else
             {
                 refundStatusImage = "scripts/app/assets/Refund-Sent-01.png";
                 refundStatusImageAlt = "Return Sent";
-                refundStatusDescription = String.Format("Your {0} Refund has been sent. You will receive your refund in a few day", previousYearAccount.Year);
-
+                refundStatusDescription = String.Format("Your {0} refund has been sent on {1}.", previousYearAccount.Year, ((DateTime)previousYearAccount.RefundStatusDate).ToShortDateString());
             }
 
             if (user != null)
