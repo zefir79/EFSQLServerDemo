@@ -61,18 +61,28 @@
   display: block;
   text-align: right; }
 
+.login-body {
+  background-image: radial-gradient(closest-corner, rgba(16, 47, 70, 0) 60%, rgba(16, 47, 70, 0.26)), linear-gradient(to top left, #26d0ce, #1a2980 90%); }
+
 .login-text-container {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px;
   width: 300px;
   padding: 20px;
   background-color: #ffffff;
-  -webkit-border-radius: 5px 5px 5px 5px;
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow: 3px 3px 5px 6px #ccc;
-  /* Firefox 3.5 - 3.6 */
-  box-shadow: 1px 2px 5px 1px #ccc; }
+  -webkit-border-radius: 5px 5px 5px 5px; }
+  .login-text-container .login-logo-container {
+    width: 100%;
+    text-align: center; }
+  .login-text-container h2 {
+    font-size: 20px;
+    text-align: center; }
+  .login-text-container .form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0; }
+  .login-text-container .control-label {
+    margin-bottom: 3px; }
   .login-text-container input {
     display: block;
     width: 100%;
