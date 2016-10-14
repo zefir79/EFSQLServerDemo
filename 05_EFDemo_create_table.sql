@@ -405,20 +405,21 @@ INSERT INTO "ECommerce"."State" ("StateId", "StateCode", "StateDescription") VAL
 INSERT INTO "ECommerce"."State" ("StateId", "StateCode", "StateDescription") VALUES (2, N'VA', 'Virginia');
 INSERT INTO "ECommerce"."State" ("StateId", "StateCode", "StateDescription") VALUES (3, N'DC', 'Disctrict of Columbia');
 
-INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN")
-	VALUES (1, N'John', 'Doe', 'jdoe1234', '1RS@ccount1', '111111111', null);
-INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN")
-	VALUES (2, N'Jane', 'Smith', 'jsmith1234', '1RS@ccount2', '111111112', null);
-INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN")
-	VALUES (3, N'Will', 'Smith', 'wsmith1234', '1RS@ccount3', '111111113', '222222223');
-INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN")
-	VALUES (4, N'John', 'Wood', 'jwood1234', '1RS@ccount4', '111111114', null);
-INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN")
-	VALUES (5, N'Amanda', 'Garcia', 'agarcia1234', '1RS@ccount5', '111111115', null);
-INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN")
-	VALUES (6, N'Anna', 'Smith', 'asmith1234', '1RS@ccount6', '111111116', '222222226');
-INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN")
-	VALUES (7, N'Ross', 'Smith', 'rsmith1234', '1RS@ccount7', '111111117', '222222227');
+INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN") 
+	VALUES (1, N'John', 'Doe', 'testuser1', '1RS@ccount1', '111111111', null); 
+INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN") 
+	VALUES (2, N'Jane', 'Doe', 'testuser2', '1RS@ccount2', '111111112', null); 
+INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN") 
+	VALUES (3, N'Will', 'Smith', 'testuser3', '1RS@ccount3', '111111113', '222222223'); 
+INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN") 
+    VALUES (4, N'John', 'Wood', 'testuser4', '1RS@ccount4', '111111114', null); 
+INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN") 
+	VALUES (5, N'Jane', 'Wood', 'testuser5', '1RS@ccount5', '111111115', null); 
+INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN") 
+	VALUES (6, N'Anna', 'Smith', 'testuser6', '1RS@ccount6', '111111116', '222222226'); 
+INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN") 
+	VALUES (7, N'Ross', 'Smith', 'testuser7', '1RS@ccount7', '111111117', '222222227'); 
+
 
   /* Individual filing as SINGLE and return status for 2015 NOT AVAILABLE*/
   INSERT INTO "ECommerce"."Account" ("AccountId", "UserId", "Year", "FilingStatus", "ReturnsStatus", "ReturnsStatusDate",
