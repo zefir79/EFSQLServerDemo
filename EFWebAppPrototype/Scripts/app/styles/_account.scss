@@ -9,7 +9,7 @@
 
   h1{
     margin-top: 8px;
-    font-size: $h1FontSize;
+    font-size: 60px;
     font-weight: bold;
   }
 
@@ -58,15 +58,6 @@
   text-align: right;
   padding-bottom: 5px;
 
-}
-
-.log-out-link{
-    color: $dark-blue !important;
-
-}
-
-.log-out-link:hover{
-    color: $primary-orange;
 }
 
 

@@ -8,7 +8,7 @@
 
   .navbar-nav>li>a{
     color: $black;
-    padding: 8px 5px;
+    padding: 10px 5px;
   }
 
   .container-fluid{
@@ -18,7 +18,7 @@
 }
 
 .navbar{
-  min-height: 36px;
+  min-height: 40px;
 
   li:hover{
     background-color: #FFF;
@@ -62,16 +62,4 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
-
-
-}
-
-@media (max-width: $viewport-xs) {
-    .navbar-nav > li{
-         display:block;
-         border-left: none;
-         border-right: none;
-         border-bottom: solid 1px $white;
-         text-align: left;
-      }
 }

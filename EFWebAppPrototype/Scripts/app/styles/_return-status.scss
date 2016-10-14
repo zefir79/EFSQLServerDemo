@@ -7,7 +7,7 @@
   h2{
 
     margin-top: 5px;
-    font-size: $h2FontSize;
+    font-size: 24px;
   }
 
   .your-status{
@@ -27,12 +27,5 @@
   .return-status{
     height: 200px;
   }
-
-}
-
-@media (max-width: $viewport-lg) {
-    .return-status{
-        margin-bottom: 15px;
-    }
 
 }

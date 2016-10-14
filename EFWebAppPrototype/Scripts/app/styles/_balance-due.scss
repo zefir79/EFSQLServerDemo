@@ -7,7 +7,7 @@
   h2{
 
     margin-top: 5px;
-    font-size: $h2FontSize;
+    font-size: 24px;
   }
 
   .amount{
@@ -33,31 +33,4 @@
 .payment-icons{
   text-align: center;
   font-size: 70px;
-  margin: 10px 0 15px 0;
-}
-
-@media (min-width: $viewport-lg) {
-  .balance-due{
-    height: 150px;
-  }
-
-  .make-payment{
-    height: 150px;
-  }
-
-  .see-payments{
-      height: 150px;
-  }
-
-}
-
-@media (max-width: $viewport-lg) {
-    .balance-due{
-        margin-bottom: 15px;
-    }
-
-    .make-payment{
-    margin-bottom: 15px;
-  }
-
 }
