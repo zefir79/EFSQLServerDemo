@@ -169,6 +169,9 @@
   display: table-cell;
   text-align: center; }
 
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #112e51; }
+
 .first-menu-item {
   border-left: 3px solid #FFFFFF; }
 

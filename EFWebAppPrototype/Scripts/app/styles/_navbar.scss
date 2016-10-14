@@ -37,6 +37,10 @@
   text-align:center;
 }
 
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: $dark-blue;
+}
+
 
 .first-menu-item{
   border-left:3px solid $white;
