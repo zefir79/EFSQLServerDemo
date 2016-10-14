@@ -18,7 +18,7 @@
 }
 
 .navbar{
-  min-height: 36px;
+  min-height: 37px;
 
   li:hover{
     background-color: #FFF;
@@ -71,11 +71,18 @@
 }
 
 @media (max-width: $viewport-xs) {
+    .navbar-collapse{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .navbar-nav > li{
          display:block;
          border-left: none;
          border-right: none;
          border-bottom: solid 1px $white;
-         text-align: left;
+         text-align: center;
       }
+
+
 }
