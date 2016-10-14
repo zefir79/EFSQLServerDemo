@@ -11,21 +11,21 @@
   }
 
   .your-status{
-    font-size: 30px;
+    font-size: 27px;
   }
 }
 
 @media (max-width: $viewport-xs) {
 
   .return-status.your-status{
-    font-size: 20px;
+    font-size: 18px;
   }
 
 }
 
 @media (min-width: $viewport-lg) {
   .return-status{
-    height: 200px;
+    height: 180px;
   }
 
 }

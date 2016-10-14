@@ -11,7 +11,7 @@
   }
 
   .amount{
-    font-size: 44px;
+    font-size: 40px;
   }
 
 }
@@ -21,6 +21,15 @@
   background-color: $medium-blue;
   padding: 10px;
   color: $white;
+
+  a{
+      color: $white;
+      text-decoration: none;
+  }
+}
+
+.make-payment:hover{
+    background-color: $secondary-orange;
 }
 
 .see-payments{
@@ -28,25 +37,34 @@
   background-color: $lighter-blue;
   padding: 10px;
   color: $white;
+
+  a{
+      color: $white;
+      text-decoration: none;
+  }
+}
+
+.see-payments:hover{
+    background-color: $secondary-orange;
 }
 
 .payment-icons{
   text-align: center;
-  font-size: 70px;
+  font-size: 63px;
   margin: 10px 0 15px 0;
 }
 
 @media (min-width: $viewport-lg) {
   .balance-due{
-    height: 150px;
+    height: 140px;
   }
 
   .make-payment{
-    height: 150px;
+    height: 140px;
   }
 
   .see-payments{
-      height: 150px;
+      height: 140px;
   }
 
 }

@@ -12,11 +12,11 @@
   }
 
   .your-status{
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .refund-approved{
-    width:100%;
+    width:110px;
 
   }
 
@@ -26,12 +26,12 @@
 
   .refund-status-txt{
     display: inline-block;
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 5px;
   }
 
   .refund-amount{
-      font-size: 18px;
+      font-size: 16px;
   }
 }
 
@@ -42,7 +42,7 @@
 
 @media (min-width: $viewport-lg) {
   .refund-status{
-    height: 200px;
+    height: 180px;
   }
 
 }
