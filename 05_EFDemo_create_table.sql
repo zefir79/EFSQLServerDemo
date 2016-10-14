@@ -406,19 +406,19 @@ INSERT INTO "ECommerce"."State" ("StateId", "StateCode", "StateDescription") VAL
 INSERT INTO "ECommerce"."State" ("StateId", "StateCode", "StateDescription") VALUES (3, N'DC', 'Disctrict of Columbia');
 
 INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN")
-	VALUES (1, N'John', 'Doe', 'testuser1', '1RS@ccount1', '111111111', null);
+	VALUES (1, N'John', 'Doe', 'jdoe1234', '1RS@ccount1', '111111111', null);
 INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN")
-	VALUES (2, N'Jane', 'Doe', 'testuser2', '1RS@ccount2', '111111112', null);
+	VALUES (2, N'Jane', 'Smith', 'jsmith1234', '1RS@ccount2', '111111112', null);
 INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN")
-	VALUES (3, N'Will', 'Smith', 'testuser3', '1RS@ccount3', '111111113', '222222223');
+	VALUES (3, N'Will', 'Smith', 'wsmith1234', '1RS@ccount3', '111111113', '222222223');
 INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN")
-	VALUES (4, N'John', 'Wood', 'testuser4', '1RS@ccount4', '111111114', null);
+	VALUES (4, N'John', 'Wood', 'jwood1234', '1RS@ccount4', '111111114', null);
 INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN")
-	VALUES (5, N'Jane', 'Wood', 'testuser5', '1RS@ccount5', '111111115', null);
+	VALUES (5, N'Amanda', 'Garcia', 'agarcia1234', '1RS@ccount5', '111111115', null);
 INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN")
-	VALUES (6, N'Anna', 'Smith', 'testuser6', '1RS@ccount6', '111111116', '222222226');
+	VALUES (6, N'Anna', 'Smith', 'asmith1234', '1RS@ccount6', '111111116', '222222226');
 INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "Password", "PrimarySSN", "SecondarySSN")
-	VALUES (7, N'Ross', 'Smith', 'testuser7', '1RS@ccount7', '111111117', '222222227');
+	VALUES (7, N'Ross', 'Smith', 'rsmith1234', '1RS@ccount7', '111111117', '222222227');
 
   /* Individual filing as SINGLE and return status for 2015 NOT AVAILABLE*/
   INSERT INTO "ECommerce"."Account" ("AccountId", "UserId", "Year", "FilingStatus", "ReturnsStatus", "ReturnsStatusDate",
@@ -428,7 +428,7 @@ INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "
   /* Individual filing as SINGLE and return status for 2014 has been received by IRS*/
   INSERT INTO "ECommerce"."Account" ("AccountId", "UserId", "Year", "FilingStatus", "ReturnsStatus", "ReturnsStatusDate",
   	"RefundStatus", "RefundStatusDate", "TotalExceptions", "AGI", "Deductions", "TaxesDue", "PaymentsMade", "BalanceDue", "RefundDue")
-  	VALUES (2, 1, '2014', 'Single', 'Return Received for 2014', current_timestamp, 'Refund Sent for 2014', '04/10/2015', 3, 50000.00, 500.00, 100.00, 0.00, 100.00, 0.00);
+  	VALUES (2, 1, '2014', 'Single', 'Return Received for 2014', current_timestamp, 'Refund Sent for 2014', '04/10/2015', 3, 50000.00, 500.00, 100.00, 100.00, 0.00, 100.00);
 
   /* Individual filing as SINGLE and has been RECEIVED by IRS*/
   INSERT INTO "ECommerce"."Account" ("AccountId", "UserId", "Year", "FilingStatus", "ReturnsStatus", "ReturnsStatusDate",
@@ -448,7 +448,7 @@ INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "
   /* Individual filing as HEAD OF HOUSEHOLD and return status for 2014 has been approved by IRS*/
   INSERT INTO "ECommerce"."Account" ("AccountId", "UserId", "Year", "FilingStatus", "ReturnsStatus", "ReturnsStatusDate",
   	"RefundStatus", "RefundStatusDate", "TotalExceptions", "AGI", "Deductions", "TaxesDue", "PaymentsMade", "BalanceDue", "RefundDue")
-  	VALUES (6, 4, '2014', 'Head of Household', 'Return Received for 2014', current_timestamp, 'Refund Sent for 2014', '04/01/2015', 90000.00, 10000.00, 0.00, 0.00, 0.00, 0.00, 200.00);
+  	VALUES (6, 4, '2014', 'Head of Household', 'Return Received for 2014', current_timestamp, 'Refund Sent for 2014', '04/01/2015', 0, 90000.00, 10000.00, 0.00, 0.00, 0.00, 200.00);
 
   /* Individual filing as HEAD OF HOUSEHOLD and return status for 2015 is FILING PROPOSAL SENT has been approved by IRS*/
   INSERT INTO "ECommerce"."Account" ("AccountId", "UserId", "Year", "FilingStatus", "ReturnsStatus", "ReturnsStatusDate",
@@ -458,14 +458,14 @@ INSERT INTO "ECommerce"."User" ("UserId", "FirstName", "LastName", "UserName", "
   /* Individual filing as HEAD OF HOUSEHOLD and return status for 2014 has been approved by IRS*/
   INSERT INTO "ECommerce"."Account" ("AccountId", "UserId", "Year", "FilingStatus", "ReturnsStatus", "ReturnsStatusDate",
   	"RefundStatus", "RefundStatusDate", "TotalExceptions", "AGI", "Deductions", "TaxesDue", "PaymentsMade", "BalanceDue", "RefundDue")
-  	VALUES (8, 5, '2014', 'Head of Household', 'Return Received for 2014', current_timestamp, 'Refund Sent for 2014', '04/01/2015', 90000.00, 10000.00, 0.00, 0.00, 0.00, 0.00, 200.00);
+  	VALUES (8, 5, '2014', 'Head of Household', 'Return Received for 2014', current_timestamp, 'Refund Sent for 2014', '04/01/2015', 0, 90000.00, 10000.00, 0.00, 0.00, 0.00, 200.00);
 
   /* Individual filing as HEAD OF HOUSEHOLD and return status for 2015 has been approved by IRS*/
   INSERT INTO "ECommerce"."Account" ("AccountId", "UserId", "Year", "FilingStatus", "ReturnsStatus", "ReturnsStatusDate",
   	"RefundStatus", "RefundStatusDate", "TotalExceptions", "AGI", "Deductions", "TaxesDue", "PaymentsMade", "BalanceDue", "RefundDue")
-  	VALUES (9, 6, '2015', 'Head of Household', 'Return Received for 2014', current_timestamp, 'Refund Approved', '03/01/2016', 100000.00, 10000.00, 0.00, 0.00, 0.00, 0.00, 500.00);
+  	VALUES (9, 6, '2015', 'Head of Household', 'Return Received for 2015', current_timestamp, 'Refund Approved', '03/01/2016', 0, 100000.00, 10000.00, 0.00, 0.00, 0.00, 500.00);
 
   /* Individual filing as MARRIED FILING JOINTLY and return status for 2015 has been SENT by IRS*/
   INSERT INTO "ECommerce"."Account" ("AccountId", "UserId", "Year", "FilingStatus", "ReturnsStatus", "ReturnsStatusDate",
   	"RefundStatus", "RefundStatusDate", "TotalExceptions", "AGI", "Deductions", "TaxesDue", "PaymentsMade", "BalanceDue", "RefundDue")
-  	VALUES (10, 7, '2015', 'Married Filing Jointly', 'Return Received for 2014', current_timestamp, 'Refund Sent', '03/01/2016', 75000.00, 5000.00, 0.00, 0.00, 0.00, 0.00, 100.00);
+  	VALUES (10, 7, '2015', 'Married Filing Jointly', 'Return Received for 2015', current_timestamp, 'Refund Sent for 2015', '03/01/2016', 0, 75000.00, 5000.00, 0.00, 0.00, 0.00, 100.00);

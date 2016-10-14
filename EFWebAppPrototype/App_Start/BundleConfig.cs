@@ -36,7 +36,8 @@ namespace EFWebAppPrototype
             bundles.Add(new StyleBundle("~/style/css").Include(
                      "~/Scripts/app/bower_components/bootstrap-css-only/css/bootstrap.css",
                       "~/Scripts/app/app.css",
-                      "~/Scripts/app/styles/application.css"));
+                      "~/Scripts/app/styles/application.css",
+                      "~/Content/css/font-awesome.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                 "~/Scripts/app/app.js",
