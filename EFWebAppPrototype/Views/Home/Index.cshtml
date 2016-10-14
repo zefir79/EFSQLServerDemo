@@ -42,7 +42,7 @@
                 <div class="input-group pull-right">
                     <input type="text" class="form-control btn-height" placeholder="Search IRS.gov">
                     <span class="input-group-btn">
-                        <button class="btn btn-default btn-height" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        <button class="btn btn-default btn-height" type="button"><img src="~/scripts/app/assets/search.png" title="Search" alt="Search" /></button>
                     </span>
                 </div><!-- /input-group -->
             </div>
@@ -104,7 +104,7 @@
                             <hr>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <img src="~/scripts/app/assets/user.png" title="Profile" alt="Profile" />
                                     <span> View Profile</span>
                                 </div>
                                 <div class="col-md-6">
@@ -113,7 +113,7 @@
                                         using (Html.BeginForm("LogOut", "Account", FormMethod.Post, new { id = "logoutForm" }))
                                         {
                                             @Html.AntiForgeryToken()
-                                            <a class="log-out-link" href="javascript:document.getElementById('logoutForm').submit()"><i class="fa fa-sign-out" aria-hidden="true"></i><span>Sign Out</span></a>
+                                            <a class="log-out-link" href="javascript:document.getElementById('logoutForm').submit()"><img src="~/scripts/app/assets/sign-out.png" title="Sign Out" alt="Sign Out" /><span>Sign Out</span></a>
                                         }
                                     }
                                 </div>
@@ -137,7 +137,7 @@
                                     <br />
                                     <br />
                                     <br />
-                                    <a class="pull-right align-bottom" href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> More Info</a>
+                                    <a class="pull-right align-bottom" href="#"><img src="~/scripts/app/assets/info-circle.png" title="More Info" alt="More Info" /> More Info</a>
                                     <br />
                                 </div>
                             </div>
@@ -147,23 +147,23 @@
                                         <div class="make-payment">
                                             <a href="#">
                                                 <div class="payment-icons">
-                                                    <i class="fa fa-usd" aria-hidden="true"></i>
+                                                    <img src="~/scripts/app/assets/usd.png" title="Make Payment" alt="Make Payment" />
                                                 </div>
                                                 <hr>
                                                <span class="make-payment-text">Make Payment</span>
                                             
-                                            <i class="fa fa-arrow-circle-right pull-right" aria-hidden="true"></i></a>
+                                                <img class="pull-right" src="~/scripts/app/assets/arrow-circle-right.png" title="Go to Link" alt="Go to link" /></a>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="see-payments">
                                           <a href="#">
                                             <div class="payment-icons">
-                                                <i class="fa fa-list-ol" aria-hidden="true"></i>
+                                                <img src="~/scripts/app/assets/list-ol.png" title="See Payments" alt="See Payments" />
                                             </div>
                                             <hr>
                                             <span class="see-payments-text">See Payment</span>
-                                            <i class="fa fa-arrow-circle-right pull-right" aria-hidden="true"></i></a>
+                                              <img class="pull-right" src="~/scripts/app/assets/arrow-circle-right.png" title="Go to Link" alt="Go to link" /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -182,7 +182,7 @@
                                         {{userAccount.returnsStatus}}
                                     </span>
                                     <br />
-                                    <a class="align-bottom" href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> More Info</a>
+                                    <a class="align-bottom" href="#"><img src="~/scripts/app/assets/info-circle.png" title="More Info" alt="More Info" /> More Info</a>
                                     <br />
                                 </div>
                             </div>
@@ -268,7 +268,7 @@
                                     <div class="button-container-right">
                                         <a href="https://www.irs.gov/individuals/get-transcript" class="btn btn-primary" target="_blank">
                                             Get Transcript
-                                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                            <img src="~/scripts/app/assets/arrow-circle-right.png" title="Go to Link" alt="Go to link" />
                                         </a>
                                     </div>
                                 </div>
@@ -297,51 +297,51 @@
                     <div class="col-md-15 col-sm-6">
                         <strong>Our Agency:</strong>
                         <ul class="links">
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> About Us</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Work at IRS</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Help & Resources</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Contact Your Local Office</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Tax Stats, Facts & Figures</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> About Us</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> Work at IRS</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> Help & Resources</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> Contact Your Local Office</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> Tax Stats, Facts & Figures</li>
                         </ul>
                     </div>
                     <div class="col-md-15 col-sm-6">
                         <strong>Know Your Rights:</strong>
                         <ul class="links">
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Taxpayer Bill of Rights</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Taxpayer Advocate</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Accessibility</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Civil Rights</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Freedom of Information Act</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> No FEAR Act</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Privacy Policy</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> Taxpayer Bill of Rights</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> Taxpayer Advocate</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> Accessibility</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> Civil Rights</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> Freedom of Information Act</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> No FEAR Act</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> Privacy Policy</li>
                         </ul>
                     </div>
                     <div class="col-md-15 col-sm-6">
                         <strong>Resolve an Issue:</strong>
                         <ul class="links">
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Respond to a Notice</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Office of Appeals</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Identity Theft</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Report Phishing</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Tax Fraud & Abuse</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> Respond to a Notice</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> Office of Appeals</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> Identity Theft</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> Report Phishing</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> Tax Fraud & Abuse</li>
                         </ul>
                     </div>
                     <div class="col-md-15 col-sm-6">
                         <strong>Other Languages:</strong>
                         <ul class="links">
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Español</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> 中文</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> 한국어</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Pусский</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> TiếngViệt</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> Español</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> 中文</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> 한국어</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> Pусский</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> TiếngViệt</li>
                         </ul>
                     </div>
                     <div class="col-md-15 col-sm-6">
                         <strong>Related Sites:</strong>
                         <ul class="links">
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> U.S. Treasury</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Treasury Inspector General for Tax Administration</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> USA.gov</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> U.S. Treasury</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> Treasury Inspector General for Tax Administration</li>
+                            <li><img class="footer-bullet" src="~/scripts/app/assets/angle-right.png" title="Bullet" alt="Bullet" /> USA.gov</li>
                         </ul>
                     </div>
                 </div>

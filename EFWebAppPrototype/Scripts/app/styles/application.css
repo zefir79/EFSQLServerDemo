@@ -441,6 +441,8 @@ ul.links {
   .links li {
     padding: 3px 0;
     color: #0071bc; }
+    .links li .footer-bullet {
+      width: 10px; }
   .links i {
     color: #f23f00;
     font-weight: bold; }

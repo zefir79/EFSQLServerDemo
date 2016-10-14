@@ -16,6 +16,10 @@ ul.links{
   li {
     padding: 3px 0;
     color: $medium-blue;
+
+    .footer-bullet{
+        width: 10px;
+    }
   }
   i{
     color: $primary-orange;
