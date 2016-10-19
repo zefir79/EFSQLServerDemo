@@ -20,45 +20,47 @@
 </head>
 <body class="login-body">
     <div class="login-text-container">
-        <div class="login-logo-container">
-            <img class="main-logo" src="~/scripts/app/assets/irs-logo.jpg" title="IRS Logo" alt="IRS Logo">
+        <div class="alert alert-info" role="alert">
+            Request for Quotation (RFQ), Solicitation No: TIRNO-16-Q-00169 (GSA# 1148534)
+            Agile Technology / Web Applications Support Services – BPA
+            Attachment 7 – User Stories Prototype
         </div>
         <h2>Account Dashboard Log in</h2>
 
-                <section id="loginForm">
-                    @using (Html.BeginForm("Login", "Account", new { }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        <section id="loginForm">
+            @using (Html.BeginForm("Login", "Account", new { }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
             {
-                        @Html.AntiForgeryToken()
-                       
-                        <hr />
-                       
-                         @Html.ValidationSummary(false, null, new { @class = "text-danger" })
+                @Html.AntiForgeryToken()
+
+                <hr />
+
+                        @Html.ValidationSummary(false, null, new { @class = "text-danger" })
 
                         <div class="form-group">
                             @Html.LabelFor(m => m.Username, new { @class = "control-label" })
-                           <br/>
-                                @Html.TextBoxFor(m => m.Username, new { @class = "form-control" })
-                                @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger" })
-                            
+                            <br />
+                            @Html.TextBoxFor(m => m.Username, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger" })
+
                         </div>
                         <div class="form-group">
                             @Html.LabelFor(m => m.Password, new { @class = "control-label" })
-                            <br/>
-                                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-                                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
-                            
+                            <br />
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+
                         </div>
 
                         <div class="form-group">
-                            <div >
+                            <div>
                                 <input type="submit" value="Log in" class="btn btn-primary" />
                             </div>
                         </div>
 
-                        <div class="alert alert-info" role="alert">This is a VariQ prototype</div>
+                        <div class="alert alert-danger" role="alert"><strong>This prototype is developed by Team VariQ in response to the above solicitation. Only authorized IRS personnel is permitted to access its functionality</strong></div>
 
-                    }
-                </section>
+            }
+        </section>
 
     </div>
 
@@ -66,6 +68,7 @@
 
 
 </body>
+
 </html>
 
 
